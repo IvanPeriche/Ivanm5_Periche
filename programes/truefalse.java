@@ -7,24 +7,21 @@ public class truefalse {
 
         Scanner intro = new Scanner(System.in);
 
-        int lastTrue = 0;
-        int l = 1;
-        while(intro.hasNextBoolean()){
+        int ultimTrue = 0;  //variable per al ultim true
+        int linea = 1;  //variable per a contar la línia
 
-            
-            
-            if(intro.nextBoolean()){
+        while(intro.hasNextBoolean()){ //bucle
 
-                lastTrue = l;
+            if(intro.nextBoolean()){ //mentre hagi un boolean per llegir
+
+                ultimTrue = linea; //actualitzem la variable
 
             } 
-            l++;
+            linea++; // contador
 
         }
-        System.out.println("L'ultim true esta en la línea " + lastTrue);
-
+        System.out.println("L'ultim true esta en la línea " + ultimTrue);
 
     }
-
     
 }
